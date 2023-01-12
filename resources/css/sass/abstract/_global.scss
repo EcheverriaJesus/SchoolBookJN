@@ -9,3 +9,12 @@
 body{
     background-color: var(--eightcolor);
 }
+html.dark-mode{
+body{
+    background: rgb(1,0,8);
+    background: linear-gradient(90deg, rgba(1,0,8,1) 4%, rgba(18,12,61,1) 41%, rgba(0,0,80,1) 100%);
+}
+}
+html.dark-mode img {
+    filter: invert(100%);
+}

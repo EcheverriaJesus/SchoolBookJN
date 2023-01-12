@@ -1,0 +1,41 @@
+@import '../mixins';   
+
+.normal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    width: 14rem;
+    height: 100%;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.responsive{
+    @include media(){
+        display: flex;
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        width: 100%;
+        height: 3rem;
+        background-color: white;
+    }
+
+   &_botonmenu{
+    display: none;
+    @include media(){
+        display: block;
+    }
+}
+&_descripcion{
+    @include media(){
+        display: none;
+    }
+}
+&_opcion{
+    @include media(){
+        display: none;
+    }
+}
+}
+.activo{
+    display: flex;
+    } 

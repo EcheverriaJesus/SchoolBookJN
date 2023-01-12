@@ -1,17 +1,21 @@
-<nav class="animate__animated animate__backInRight flex flex-col justify-around bg-white w-56 h-full">
-    <section class="flex w-full bg-teal-500 justify-center items-center gap-4">
-        <svg class="fill-white" width="25" height="35" viewBox="0 0 24 24"><path d="M23 5v13.883l-1 .117v-16c-3.895.119-7.505.762-10.002 2.316-2.496-1.554-6.102-2.197-9.998-2.316v16l-1-.117v-13.883h-1v15h9.057c1.479 0 1.641 1 2.941 1 1.304 0 1.461-1 2.942-1h9.06v-15h-1zm-12 13.645c-1.946-.772-4.137-1.269-7-1.484v-12.051c2.352.197 4.996.675 7 1.922v11.613zm9-1.484c-2.863.215-5.054.712-7 1.484v-11.613c2.004-1.247 4.648-1.725 7-1.922v12.051z"/></svg>
-        <p class="font-Montserrat text-sm font-bold text-white">SCHOOL - BOOK</p>
+<nav class="normal animate__animated animate__rotateInDownLeft">
+        <div class="flex justify-end w-4/5 pt-5 cursor-pointer">
+            <svg class="responsive_botonmenu fill-black" width="25" height="25" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"/></svg>
+        </div>
+    <section class="flex w-full justify-center items-center gap-4">
+        <svg class="responsive_descripcion fill-emerald-700" xmlns="http://www.w3.org/2000/svg" width="30" height="35" viewBox="0 0 24 24"><path d="M20 12.875v5.068c0 2.754-5.789 4.057-9 4.057-3.052 0-9-1.392-9-4.057v-6.294l9 4.863 9-3.637zm-8.083-10.875l-12.917 5.75 12 6.5 11-4.417v7.167h2v-8.25l-12.083-6.75zm13.083 20h-4c.578-1 1-2.5 1-4h2c0 1.516.391 2.859 1 4z"/></svg>
+        <p class="responsive_descripcion font-Montserrat font-bold text-lg">SCHOOL-BOOK</p>
     </section>
     
-    <section class="flex justify-center w-full h-4/5 text-black">
+    <section class="flex pl-7 w-full h-4/5 text-black pt-8">
         <ul class="flex flex-col gap-y-12">
             @foreach ($items as $item)
-                <li class="flex fill-black hover:fill-red-600 gap-6 cursor-pointer">
-                    <svg class="w-5 h-5" viewBox="0 0 24 24"><path d="{{ $item['d'] }}"/></svg>
-                    <a class="font-Roboto text-sm hover:text-red-600" href="{{ $item['route'] }}">{{ $item['text'] }}</a>
+                <li class="flex fill-black hover:fill-red-600 gap-4 cursor-pointer">
+                    <svg class="responsive_opcion w-5 h-5" viewBox="0 0 24 24"><path d="{{ $item['d'] }}"/></svg>
+                    <a class="responsive_opcion  font-Roboto text-sm hover:text-red-600" href="{{ $item['route'] }}">{{ $item['text'] }}</a>
                 </li>
             @endforeach
         </ul>
+       {{--  <input type="checkbox" id="dark-mode" onclick="document.documentElement.classList.toggle('dark-mode')"> --}}
     </section>
 </nav>
