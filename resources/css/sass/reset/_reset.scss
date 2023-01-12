@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box; //evitar problemas del modelo caja que tienen las etiquetas
+    vertical-align: baseline; //resuelve problemas de alineaciones al insertar text,video,img,audio
+
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+    max-width: 100%; //Es para evitar el desbordamineto de uno de estos elemnetos dentro de un contenedor
+    width: 100%;
+    display: block;
+}
+
+a {
+    display: block;
+}
+
+p a {
+    display: inline;
+}
+
+li {
+    list-style-type: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: '';
+    content: none;
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    background-color: transparent;
+    display: block;
+    color: inherit;
+}
+
+table,
+tr,
+td {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body{
+    min-height: 100vh;
+    font-size: 100%;
+    line-height: 1.4em;
+}
